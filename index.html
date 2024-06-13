@@ -1,13 +1,37 @@
-<!DOCTYPE **html**>
+<!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blessed</title>
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <title>IntenationalBooks</title>
         <link rel="stylesheet" href="reset.css">
-        <link rel=”stylesheet” href=”styles.css”>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <H1>Blessed</H1>
+
+     <body>
+        <header class="cabeçalho">
+            <div class="container"> 
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Roupas</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Homem</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Mulher</a>
+                    </li>
+                </ul>
+                <img src="img/LOGO BL.svg" alt="Logo do IntenationalBooks" class="container__imagem">
+            </div>
+            <div class="container">
+                <a href="#"><img src="img/fi-sr-heart.svg" alt="Favoritos" class="container__imagem"></a>
+                <a href="#"><img src="img/fi-sr-shopping-cart.svg" alt="Carrinho de compras" class="container__imagem"></a>
+                <a href="#"><img src="img/fi-sr-user.svg" alt="Meu perfil" class="container__imagem"></a>
+            </div>
+        </header>
     </body>
 </html>
