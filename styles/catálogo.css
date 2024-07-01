@@ -6,7 +6,7 @@
 
 .catálogo__titulo {
     color: var(--dourado);
-    font-weight: 300;
+    font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 1em;
 }
