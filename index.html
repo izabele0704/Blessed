@@ -9,16 +9,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+
         <header class="cabeçalho">
             <div class="container"> 
                 <input type="checkbox" id="menu" class="container__botao">
-                <label for="menu">
+                <label for="menu" class="container__rotulo">
                     <span class="cabeçalho__menu-hamburguer container__imagem"></span>
                 </label>
                 <ul class="lista-menu">
@@ -30,15 +30,17 @@
                         <a href="#" class="lista-menu__link">Mulher</a>
                     </li>
                 </ul>
-                <img src="img/LOGO BL.svg" alt="Logo de Blessed" class="container__imagem">
-                <h1 class="container__titulo"><b class="container__titulo--negrito">BL</b>essed</h1>
+                <img src="img/LOGO BL.svg" alt="Logo do Blessed" class="container__imagem">
+                <h1 class="container__titulo"><b class="container__titulo--negrito">BL</b>ESSED</h1>
             </div>
 
             <ul class="opções">
+                
                 <input type="checkbox" id="opções-menu" class="opções__botão" />
-                <label for="opções-menu">
+                <label for="opções-menu" class="opções__rotulo">
                   <li class="opções__item">Categorias</li>
                 </label>
+
                 <ul class="lista-menu">
                     <li class="lista-menu__titulo">Roupas</li>
                     <li class="lista-menu__item">
@@ -48,16 +50,25 @@
                         <a href="#" class="lista-menu__link">Mulher</a>
                     </li>
                 </ul>
+                
                 <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
                 <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
             </ul>
 
             <div class="container">
-                <a href="#"><img src="img/fi-sr-heart.svg" alt="Favoritos" class="container__imagem"></a>
-                <a href="#"><img src="img/fi-sr-shopping-cart.svg" alt="Carrinho de compras" class="container__imagem"></a>
-                <a href="#"><img src="img/fi-sr-user.svg" alt="Meu perfil" class="container__imagem"></a>
+                <a href="#"><img src="img/fi-sr-heart.svg" alt="Favoritar livro" class="container__imagem container__imagem-transparente"></a>
+                <a href="#" class="container__link">
+                    <img src="img/fi-sr-shopping-cart.svg" alt="Carrinho de compras" class="container__imagem">
+                    <p class="container__texto">Minhas compras</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img src="img/fi-sr-user.svg" alt="Meu perfil" class="container__imagem">
+                    <p class="container__texto">Meu perfil</p>
+                </a>
             </div>
+
         </header>
+
         <section class="banner">
             <h2 class="banner__titulo">Já tem roupas para esse inverno?</h2>
             <p class="banner__texto">Encontre nessa loja a roupa ideal para esse inverno!</p>
@@ -66,6 +77,7 @@
           <section class="carrossel">
             <h2 class="carrossel__titulo">Camisetas</h2>
             <!-- Slider main container -->
+            <div class="carrossel__container">
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <!-- If we need pagination -->
@@ -109,6 +121,7 @@
                      <a href="#" class="botoes__ancora">Saiba mais</a>
                  </div>
             </div>
+            </div> 
         </section>
   
         <section class="carrossel">
@@ -186,30 +199,33 @@
         </section>
 
         <section class="contato">
-            <div class=".contato__descrição">
-                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-                <p class="contato__texto">Atualizações de nossos novos looks e outros tipos de peças e promoção.</p>
-            </div>
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de nossos novos looks e outros tipos de peças e promoção.</p>
             <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
         </section>
         <hr/>
-        <footer class="rodape">
-            <h2 class="rodape__titulo">Blessed</h2>
+        <footer class="rodapé">
+            <h2 class="rodapé__titulo">Blessed</h2>
             <ul class="lista-rodapé">
                 <li class="lista-rodapé__titulo">Redes sociais</li>
                 <li class="lista-rodapé__item">
                     <img src="img/tiktok 1.svg" alt="logo tiktok">
-                    <a href="#" class="lista-rodapé__link">@blessedblusas</a>
+                    <a href="#" class="lista-rodapé__link">Blessedblusas</a>
                 </li>
                 <li class="lista-rodapé__item">
                     <img src="img/logo-instagram-png-fundo-transparente2 1.svg" alt="logo instagram">
-                    <a href="#" class="lista-rodapé__link">>@blessedblusas</a>
+                    <a href="#" class="lista-rodapé__link">Blessedblusas</a>
                 </li>
+            </ul>
+            
+            <ul class="lista-rodapé">
+                <li class="lista-rodapé__titulo">Entre em contato</li>
                 <li class="lista-rodapé__item">
-                    <img src="img/discordia 1.svg" alt="logo discord">
-                    <a href="#" class="lista-rodapé__link">>@blessedblusas</a>
+                    <img src="img/whatsapp 1.svg" alt="whatsapp">
+                    <a href="#" class="lista-rodapé__link">41984720629</a>
                 </li>
-              </ul>
+            </ul>
+
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
