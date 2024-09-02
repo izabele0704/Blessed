@@ -67,6 +67,7 @@
 
 .container__texto {
     display: none;
+    color: var(--branco);
 }
 
 @media screen and (min-width: 1024px) {
@@ -75,6 +76,7 @@
     .container__titulo--negrito {
         font-family: var(--fonte-secundario);
         font-size: 30px;
+        color: var(--branco);
     }
 
     .container__titulo {
@@ -93,6 +95,7 @@
     .opções__item {
         padding: 0 1em;
         text-transform: uppercase;
+        color: var(--branco);
     }
 
     .opções__link {

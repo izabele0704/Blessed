@@ -6,7 +6,7 @@
 
 .catálogo__titulo {
     color: var(--dourado);
-    font-weight: 800;
+    font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 1em;
 }
@@ -28,4 +28,20 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    .catálogo__titulo {
+        font-size: 24px;
+    }
+
+    .catálogo__link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .catálogo {
+        padding: 3em 30vw
+    }
 }
